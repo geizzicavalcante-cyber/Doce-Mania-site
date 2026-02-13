@@ -1,8 +1,15 @@
 # Doce Mania Confeitaria Artesanal
 
-Site da **Doce Mania Confeitaria Artesanal**, desenvolvido como projeto de aprendizado em **HTML, CSS e JavaScript**.  
+Este é o site da **Doce Mania Confeitaria Artesanal**, desenvolvido como projeto de aprendizado em **HTML, CSS e JavaScript**.  
 
-Este projeto faz parte dos estudos da autora em criação de sites responsivos, incluindo efeitos hover nos produtos e layout interativo.
+O projeto inclui um layout responsivo, efeitos de hover nas imagens dos produtos e seções de contato via WhatsApp, Instagram e iFood.  
+
+---
+
+## 🌐 Site online
+
+Você pode acessar o site publicado pelo GitHub Pages aqui:  
+[Doce Mania Confeitaria Artesanal](https://geizzicavalcante-cyber.github.io/Doce-Mania-site/)
 
 ---
 
@@ -10,7 +17,7 @@ Este projeto faz parte dos estudos da autora em criação de sites responsivos, 
 
 - HTML5  
 - CSS3  
-- JavaScript (efeito hover em imagens)  
+- JavaScript (simples para efeitos hover)  
 
 ---
 
@@ -24,14 +31,17 @@ doce-mania-site/
 
 ---
 
-## 💻 Funcionalidades
-
-- Layout responsivo  
-- Seção de produtos com descrição aparecendo apenas ao passar o mouse (hover)  
-- Contato via WhatsApp, Instagram e iFood  
-- Footer com informações da confeitaria  
 
 ---
+
+## 💻 Funcionalidades
+
+- Layout responsivo para desktop e dispositivos móveis  
+- Seção de produtos com descrição que aparece apenas ao passar o mouse (hover)  
+- Botões de contato para WhatsApp, Instagram e iFood  
+- Footer com informações da confeitaria  
+- Indicação de que o site está sendo desenvolvido por uma estudante de programação  
+
 
 ## 🖼 Imagens do site (exemplo)
 
@@ -56,5 +66,8 @@ doce-mania-site/
 1. Clone o repositório:  
 ```bash
 git clone https://github.com/geizzicavalcante-cyber/doce-mania-site.git
+
+Desenvolvido por Geizzi da Silva Cavalcante
+
 
 Este site está sendo desenvolvido como parte do aprendizado em desenvolvimento web. É um projeto em evolução, criado para praticar HTML, CSS e efeitos interativos.
