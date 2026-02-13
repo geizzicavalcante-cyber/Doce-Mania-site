@@ -1,0 +1,210 @@
+/* ================================
+   ESTILOS GERAIS
+================================= */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================================
+   HEADER
+================================= */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffe5e5;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* ================================
+   HOME
+================================= */
+.home {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home p {
+  max-width: 700px;
+  margin: 0 auto 20px auto;
+}
+
+.home .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6699;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.home .btn:hover {
+  background-color: #ff3366;
+}
+
+/* ================================
+   SOBRE
+================================= */
+.sobre {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+.sobre h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  max-width: 700px;
+  margin: 0 auto 10px auto;
+}
+
+/* ================================
+   PRODUTOS
+================================= */
+.produtos {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-card {
+  width: 200px;
+  text-align: center;
+  position: relative; /* necessário para a descrição hover */
+}
+
+.item-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Descrição escondida por padrão */
+.item-card .descricao {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Mostrar descrição no hover */
+.item-card:hover .descricao {
+  opacity: 1;
+}
+
+/* ================================
+   CONTATO
+================================= */
+.contato {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffe5e5;
+}
+
+.contato .botoes {
+  margin-bottom: 20px;
+}
+
+.contato .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6699;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contato .btn:hover {
+  background-color: #ff3366;
+}
+
+.contato p, .contato a {
+  margin-top: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+/* ================================
+   FOOTER
+================================= */
+.footer-bloco {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* ================================
+   RESPONSIVIDADE
+================================= */
+@media screen and (max-width: 600px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-card {
+    width: 80%;
+  }
+
+  .item-card img {
+    width: 100%;
+    height: auto;
+  }
+}
