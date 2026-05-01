@@ -9,58 +9,81 @@
 <body>
 
     <!-- HEADER -->
-    <header>
-        <h1>Doce Mania</h1>
-        <p>Confeitaria Artesanal</p>
-    </header>
+ <header class="header">
+  <div class="logo">Doce Mania</div>
 
-    <!-- HOME -->
-    <section class="home">
+  <nav class="nav" aria-label="Menu principal">
+    <a href="#home">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<section id="home" class="home">
+    
         <h2>Doces feitos com carinho 💕</h2>
         <p>A Doce Mania Confeitaria Artesanal oferece bolos, tortas, brownies e docinhos
 produzidos de forma artesanal, priorizando qualidade, sabor e apresentação.
 Nosso compromisso é levar carinho e dedicação em cada encomenda.
 </p>
-        <a href="https://api.whatsapp.com/send/?phone=5521971664340&text&type=phone_number&app_absent=0" class="btn">Peça pelo WhatsApp</a>
+        <a href="https://api.whatsapp.com/send/?phone=5521971664340&text&type=phone_number&app_absent=0" 
+   class="btn"
+   aria-label="Fazer pedido pelo WhatsApp da Doce Mania">
+    Peça pelo WhatsApp
+
+</a>
     </section>
 
+<section class="carrossel-topo">
+  <img src="imagens/bolo-andar.jpeg" class="slide ativo" alt="Bolo de andar decorado">
+  <img src="imagens/bolo-chocolate.jpeg" class="slide" alt="Bolo chocolatudo artesanal">
+  <img src="imagens/docinhos.jpeg" class="slide" alt="Docinhos variados para festas">
+
+  <button class="prev">‹</button>
+  <button class="next">›</button>
+</section>
+
+    <!-- HOME -->
+     
+
     <!-- SOBRE -->
-    <section class="sobre">
-        <h2>Sobre nos</h2>
-        <p>A Doce Mania Confeitaria Artesanal nasceu do amor pela confeitaria e da descoberta
-de uma paixão que se transformou em propósito. Foi na confeitaria que me encontrei,
-unindo criatividade, dedicação e carinho em cada receita. Cada doce é feito à mão,
-com ingredientes selecionados, atenção aos detalhes e aquele toque caseiro que
-transforma momentos simples em lembranças especiais.
+      <section id="sobre" class="sobre">
+        <h2>Sobre nós</h2>
+        <p>A Doce Mania Confeitaria Artesanal nasceu do amor pela confeitaria e da vontade de transformar momentos em experiências especiais.
+        Cada doce é feito à mão, com ingredientes selecionados, carinho e atenção aos detalhes, para levar sabor, beleza e emoção a cada encomenda.
 </p>
         <p class="projeto"></p>
     </section>
 
     <!-- PRODUTOS -->
 
-    <section class="produtos">
-   <section class="produtos">
+  
+   <section id="produtos" class="produtos">
   <h2>Nossos produtos</h2>
   <div class="cards-container">
 
     <!-- Torta -->
     <div class="item-card">
       <img 
+        class="img-troca"
         src="imagens/torta.jpeg" 
         alt="Torta deliciosa"
-        onmouseover="this.src='imagens/torta-hover.jpeg';"
-        onmouseout="this.src='imagens/torta.jpeg';"
-      >
-      <span class="descricao">Torta deliciosa com camadas artesanais.</span>
+        data-original="imagens/torta.jpeg"
+        data-hover="imagens/torta-hover.jpeg"
+/>  <span class="descricao">Torta deliciosa com camadas artesanais.</span>
     </div>
 
     <!-- Brownie -->
+     
     <div class="item-card">
       <img 
+        class="img-troca"
         src="imagens/brownie.jpeg" 
         alt="Brownie delicioso"
-        onmouseover="this.src='imagens/brownie-hover.jpeg';"
-        onmouseout="this.src='imagens/brownie.jpeg';"
+        data-original="imagens/brownie.jpeg"
+        data-hover="imagens/brownie-hover.jpeg"
+       
       >
       <span class="descricao">Brownie macio, sabor intenso e irresistível.</span>
     </div>
@@ -68,10 +91,11 @@ transforma momentos simples em lembranças especiais.
     <!-- Docinhos -->
     <div class="item-card">
       <img 
+        class="img-troca"
         src="imagens/docinhos.jpeg" 
         alt="Docinhos variados"
-        onmouseover="this.src='imagens/docinhos-hover.jpeg';"
-        onmouseout="this.src='imagens/docinhos.jpeg';"
+        data-original="imagens/docinhos.jpeg"
+        data-hover="imagens/docinhos-hover.jpeg"
       >
       <span class="descricao">Docinhos variados, perfeitos para qualquer festa.</span>
     </div>
@@ -80,20 +104,35 @@ transforma momentos simples em lembranças especiais.
 <!-- Bolo Decorado -->
 <div class="item-card">
   <img 
+    class="img-troca"
     src="imagens/bolo.jpeg" 
     alt="Bolo decorado"
-    onmouseover="this.src='imagens/bolo-hover.jpeg';"
-    onmouseout="this.src='imagens/bolo.jpeg';"
+    data-original="imagens/bolo.jpeg"
+    data-hover="imagens/bolo-hover.jpeg"
   >
   <span class="descricao">Bolo personalizado feito sob medida para sua festa, com recheios e decoração à escolha.</span>
 </div>
 
 
+</section>
+
+<section class="avaliacoes" id="avaliacoes">
+
+  <h2>O que nossos clientes dizem 💬</h2>
+
+  <p class="texto-avaliacao">
+    Já fez um pedido com a gente? Deixe sua avaliação 💖
+  </p>
+
+  <a href="https://g.page/r/CQYe7vHWWc6FEBM/review" target="_blank" class="btn">
+    Deixar minha avaliação ⭐
+  </a>
 
 </section>
 
+
 <!-- CONTATO -->
-<section class="contato">
+<section id="contato" class="contato">
   <h2>Faça seu pedido</h2>
   <div class="botoes">
     <a href="https://api.whatsapp.com/send/?phone=5521971664340&text&type=phone_number&app_absent=0" class="btn">WhatsApp</a>
@@ -109,8 +148,26 @@ transforma momentos simples em lembranças especiais.
   <p>Este projeto está sendo desenvolvido por uma estudante de programação em aprendizado contínuo.</p>
 </div>
 
+<!-- VLibras -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
 <!-- FOOTER -->
 <div class="footer-bloco">
   &copy; 2026 Doce Mania Confeitaria Artesanal
 </div>
+</section> <!-- fecha contato -->
+
+<script src="script.js"></script>
+</body>
+</html>
 
