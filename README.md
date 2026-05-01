@@ -34,6 +34,24 @@ doce-mania-site/
 - Footer com informações da confeitaria  
 - Indicação de que o site está sendo desenvolvido por uma estudante de programação  
 
+### ✨ 01/05/2026
+
+- Implementação de carrossel de imagens na página principal  
+- Melhoria no cabeçalho (header), com ajustes de layout e navegação  
+- Organização geral do layout do site  
+- Inclusão e organização de imagens de produtos  
+
+---
+
+## ♿ Acessibilidade
+
+O projeto inclui melhorias básicas de acessibilidade, como:
+
+- Uso de estrutura HTML semântica (`header`, `section`, `footer`)  
+- Organização da navegação para melhor entendimento em leitores de tela  
+- Melhor contraste de cores para leitura  
+- Botões e links com textos claros e descritivos  
+
 
 
 
